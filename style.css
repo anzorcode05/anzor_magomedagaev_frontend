@@ -1,0 +1,104 @@
+
+h1, h2, h3 {
+    font-size: 3em;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.25em;
+    color: #555;
+    margin: 10px 0;
+}
+
+ul {
+    font-size: 10em;
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+	font-family: cursive;
+}
+
+.content-left {
+    flex: 1; /* Занимает одну часть */
+    background-color: #ffffff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.content-right {
+    flex: 0.5; /* Занимает половину части */
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%; /* Изображение масштабируется по ширине блока */
+    height: auto;
+    border-radius: 10px;
+}
+
+.lambas{
+	width: 350px;
+	animation-duration: 7s;
+	animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-color: #181818;
+}
+
+.content {
+    margin: 40px auto;
+    max-width: 1200px; 
+}
+
+.content-left, .content-right {
+    background-color: #f8f8f8; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0;
+	transform: scaleX(1);
+  }
+
+  44% {
+	  transform: scaleX(1);
+  }
+  50% {
+    margin-left: 50%;
+	transform: scaleX(-1);
+  }
+  
+  94% {
+	  transform: scaleX(-1);
+  }
+  to {
+    margin-left: 0%;
+	transform: scaleX(1);
+  }
+}
