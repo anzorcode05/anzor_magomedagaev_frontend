@@ -1,104 +1,80 @@
+/* Стили для шапки */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px;
+    background-color: #333;
+}
 
-h1, h2, h3 {
-    font-size: 3em;
-    color: #333; 
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Горизонтальное позиционирование */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.25em;
-    color: #555;
-    margin: 10px 0;
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #add8e6;
+    margin-bottom: 10px;
 }
 
-ul {
-    font-size: 10em;
-    margin-left: 20px;
-    list-style-type: square;
+.center-image {
+    width: 200px;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-a:hover {
-    color: #004999;
-    text-decoration: underline;
-}
-
-
-.content {
+/* Вертикальное позиционирование */
+.container-2 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #90ee90;
+}
+
+/* Работа с flex */
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #e0e0e0;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.block-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #ffa07a;
     margin: 10px;
-	font-family: cursive;
 }
 
-.content-left {
-    flex: 1; /* Занимает одну часть */
-    background-color: #ffffff;
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
+/* Стили для fixed элемента */
+.fixed-cat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
-.content-right {
-    flex: 0.5; /* Занимает половину части */
-    background-color: #ffffff;
-    padding: 20px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-img {
-    max-width: 100%; /* Изображение масштабируется по ширине блока */
-    height: auto;
-    border-radius: 10px;
-}
-
-.lambas{
-	width: 350px;
-	animation-duration: 7s;
-	animation-name: slidein;
-    animation-iteration-count: infinite;
-}
-
-body {
-    background-color: #181818;
-}
-
-.content {
-    margin: 40px auto;
-    max-width: 1200px; 
-}
-
-.content-left, .content-right {
-    background-color: #f8f8f8; 
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 0;
-	transform: scaleX(1);
-  }
-
-  44% {
-	  transform: scaleX(1);
-  }
-  50% {
-    margin-left: 50%;
-	transform: scaleX(-1);
-  }
-  
-  94% {
-	  transform: scaleX(-1);
-  }
-  to {
-    margin-left: 0%;
-	transform: scaleX(1);
-  }
+.fixed-cat img {
+    width: 100px;
+    height: 100px;
 }
