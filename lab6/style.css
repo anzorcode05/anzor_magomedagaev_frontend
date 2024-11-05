@@ -1,0 +1,10 @@
+.img-fixed {
+    height: 700px; 
+    width: 100%; 
+    object-fit: cover; 
+}
+.alert-text {
+    color: rgb(119, 11, 219);
+    background-color: rgba(255, 0, 0, 0.356);
+    border-color:rgb(91, 194, 32)
+}
